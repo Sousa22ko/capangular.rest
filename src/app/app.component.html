@@ -27,16 +27,12 @@
       <!-- <label style="color: red;">{{error.status}}</label> -->
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <div>
     <table border="1">
       <tr style="font-weight: bold;">
         <td>
-          Numero
+          Número
         </td>
         <td>
           Saida
@@ -51,6 +47,9 @@
           Destino estimada
         </td>
         <td>
+          Duração
+        </td>
+        <td>
           Empresa aérea
         </td>
       </tr>
@@ -62,13 +61,16 @@
           {{ voo.departure.airport }}
         </td>
         <td>
-          {{ voo.departure.scheduled | date:"dd/MM/yyyy hh:mm z" }}
+          {{ voo.departure.scheduled | date:"dd/MM/yyyy HH:mm z" }}
         </td>
         <td>
           {{ voo.arrival.airport }}
         </td>
         <td>
-          {{ voo.arrival.scheduled | date:"dd/MM/yyyy hh:mm z" }}
+          {{ voo.arrival.scheduled | date:"dd/MM/yyyy HH:mm z" }}
+        </td>
+        <td>
+          {{ voo | dur }}
         </td>
         <td>
           {{ voo.airline.name }}

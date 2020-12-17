@@ -1,0 +1,15 @@
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+table{
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+label{
+    color: whitesmoke;
+    font-weight: bold;
+}

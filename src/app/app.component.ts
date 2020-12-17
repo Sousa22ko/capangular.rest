@@ -26,8 +26,8 @@ export class AppComponent implements OnInit {
   statusSelecionado = "";
 
   opcoes = [
-    { nome: "Destino", value: "arr_iata" },
-    { nome: "Saída", value: "dep_iata" }
+    { nome: "Aeroporto de destino", value: "arr_iata" },
+    { nome: "Aeroporto de saída", value: "dep_iata" }
   ];
 
   opcoes2 = [
