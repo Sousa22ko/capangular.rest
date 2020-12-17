@@ -8,12 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { FlightService } from './Service/flight/flight-service.service';
 import { AirportService } from './Service/airport/airport-service.service';
 import { LoggerService } from './Service/logger/logger-service.service';
-
+import { AirpPipe } from './Pipe/airp.pipe';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AirpPipe
   ],
   imports: [
     BrowserModule,

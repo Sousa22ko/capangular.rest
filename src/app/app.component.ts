@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   aeroportos!: Airport[];
 
   voos!: FlightData[];
+
   // error = {
   //   aeroporto: "",
   //   opcao: "",

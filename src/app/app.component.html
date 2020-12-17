@@ -4,7 +4,7 @@
       <div class="col s12">
         <label for="aeroporto">Selecione o aeroporto:</label>
         <select [(ngModel)]="iata_selecionado" class="browser-default" name="aeroporto" (change)="consultarVoos()">
-          <option required *ngFor="let aero of aeroportos" [value]="aero.iata_code"> {{aero.airport_name}} - ({{aero.iata_code }})</option>
+          <option required *ngFor="let aero of aeroportos" [value]="aero.iata_code"> {{ aero | airp }}</option>
         </select>
         <!-- <label style="color: red;">{{error.aeroporto}}</label> -->
       </div>
@@ -62,13 +62,13 @@
           {{ voo.departure.airport }}
         </td>
         <td>
-          {{ voo.departure.scheduled | date:"dd/MM/yyyy hh:mm" }}
+          {{ voo.departure.scheduled | date:"dd/MM/yyyy hh:mm z" }}
         </td>
         <td>
           {{ voo.arrival.airport }}
         </td>
         <td>
-          {{ voo.arrival.scheduled | date:"dd/MM/yyyy hh:mm" }}
+          {{ voo.arrival.scheduled | date:"dd/MM/yyyy hh:mm z" }}
         </td>
         <td>
           {{ voo.airline.name }}
